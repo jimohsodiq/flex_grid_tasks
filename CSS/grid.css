@@ -1,0 +1,56 @@
+body {
+    background: hsl(179, 100%, 13%);
+}
+
+.containers {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 40px 60px;
+    width: 90%;
+    margin-top: 100px;
+}
+
+.container {
+    display: grid;
+    /* height: 100%; */
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px 200px;
+    width: 50%;
+    grid-gap: 7px;
+    grid-template-areas: "f f f f f f f f s s s s" "t t t t t j j j j j j j";
+}
+
+.first-color {
+    background: hsl(337, 91%, 45%);
+    grid-area: f;
+    color: hsl(337, 91%, 45%);
+}
+
+.second-color {
+    background: hsl(66, 91%, 56%);
+    grid-area: s;
+    color: hsl(66, 91%, 56%);
+}
+
+.third-color {
+    background: hsl(96, 81%, 51%);
+    grid-column: 1/1;
+    grid-area: t;
+    color: hsl(96, 81%, 51%);
+}
+
+.fourth-color {
+    background: hsl(221, 82%, 56%);
+    grid-area: j;
+    height: 97px;
+    color: hsl(221, 82%, 56%);
+}
+
+.fifth-color {
+    background: hsl(221, 82%, 56%);
+    grid-column: 6/-1;
+    height: 97px;
+    margin-top: -105px;
+    color: hsl(221, 82%, 56%);
+}
